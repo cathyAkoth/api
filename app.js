@@ -20,12 +20,12 @@ const swaggerJsDoc = require("swagger-jsdoc");
 // route imports
 
 const routes = require('./routes/route.js');
-// const candidateRoutes = require('./routes/candidateRoutes');
+//  const candidateRoutes = require('./routes/candidateRoutes');
 const agentRoutes = require('./routes/agentRoutes');
 const employerIndividualRoutes = require('./routes/employerIndividualRoutes');
 const employerCompanyRoutes  = require('./routes/employerCompanyRoutes');
 const productRoutes = require('./routes/route');
-// const cartRoutes = require('./routes/cartRoute');
+ const cartRoutes = require('./routes/cartRoute');
 
 
 
@@ -103,7 +103,7 @@ app.use('/agentVerification', agentRoutes)
 app.use('/employer' , employerIndividualRoutes)
  app.use('/employer/company' , employerCompanyRoutes)
  app.use('/candidateVerification', productRoutes)
-//  app.use('/shortlist' , cartRoutes)
+app.use('/shortlist' , cartRoutes)
  
  
 
